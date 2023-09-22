@@ -83,7 +83,7 @@ class MyGPT4ALL(LLM):
         # see whether the model name has .bin or not
 
         model_name = (
-            f"{model_name}.bin"
+            f"{self.model_name}.bin"
             if not self.model_name.endswith(".bin")
             else self.model_name
         )
